@@ -92,8 +92,47 @@ public enum ApexKeyword implements TokenType {
     READ_ONLY("ReadOnly"),
     REMOTE_ACTION("RemoteAction"),
     TEST_SETUP("testSetup"),
-    TEST_VISIBLE("TestVisible");
+    TEST_VISIBLE("TestVisible"),
 
+    /**
+     * SOQL ANNOTATIONS.
+     */
+    DATABASE("Database"),
+    //Select Notations
+    SELECT("SELECT"),
+    COUNT("COUNT"),
+    //From Notations
+    FROM("FROM"),
+    AS("AS"),
+    USING("USING"),//Pending to implement
+    //With Notations
+    WITH_SOQL("WITH"),
+    //Where Notations
+    WHERE("WHERE"),
+    NOT("NOT"),
+    AND("AND"),
+    OR("OR"),
+    IN("IN"),
+    INCLUDES("includes"),
+    EXCLUDES("excludes"),
+    LIKE("LIKE"),
+    //Limit Notations
+    LIMIT("LIMIT"),
+    OFFSET("OFFSET"),
+    //Order Notations
+    ORDER("ORDER"),
+    BY("BY"),
+    ASC("ASC"),
+    DES("DESC"),
+    NULLS("NULLS"),
+    FIRST("FIRST"),
+    LAST("LAST"),
+    //Group Notations
+    GROUP("GROUP"),
+    ROLLUP("ROLLUP"),
+    CUBE("CUBE")
+    ;
+    
     /**
      * Save the value with enums.
      */
