@@ -46,6 +46,7 @@ public enum ApexPunctuator implements TokenType {
     COMMA(","),
     DOT("."),
     AT("@"),
+    QUOTE("\'"),
     /**
      * OPERATORS.
      */
@@ -62,7 +63,10 @@ public enum ApexPunctuator implements TokenType {
     STAR("*"),
     STAREQU("*="),
     GT(">"),
-    LT("<");
+    GTEQU(">="),
+    LT("<"),
+    LTEQU("<="),
+    DISTINCT("!=");
 
     /**
      * Save the value of each enum.
